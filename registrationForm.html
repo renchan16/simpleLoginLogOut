@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="icon" type="image/x-icon" href="ICNY Logo.png">
+
+</head>
+<body>
+
+    <div class="box">
+        <img src="sip your coffee with us.png" alt="header">
+        <div class="head">
+            <h1>It's Caffeine New York Membership Form</h1>
+        </div>
+        <div class="phrase">
+            <p>Welcome to "It's Caffeine: New York," where every cup tells a story of passion and dedication. Nestled in the heart of the bustling streets of Mandaluyong City, and it's second branch in Morayta, Manila City, our coffee shop is a haven for coffee aficionados and casual sippers alike. Founded by the visionary Kimberly Ann Chew, "It's Caffeine" embodies her love for the perfect cup of coffee and her commitment to creating a welcoming space for the community to gather, connect, and recharge. With a carefully curated selection of premium beans sourced from around the world, expertly brewed by our skilled baristas, each sip promises an unforgettable experience. Whether you're seeking a morning pick-me-up, a cozy spot to work, or simply a moment of indulgence in the midst of city life, "It's Caffeine: New York" invites you to savor the taste of excellence in every cup.</p>
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="inside-box">
+            <h5>Disclaimer</h5>
+            <div class="phrase">
+                <p>All the information that will be collected through this form shall be considered private and treated with utmost confidentiality.</p>
+            </div>
+        </div>
+        <div class="inside-box2">
+            <div class="phrase">
+                <p>I hereby authorize and give my consent to It's Caffeine New York to collect, process, use, and reserve the data indicated herein for the purpose of membership. I understand that my personal information is protected by RA 10173 (Data Privacy Act of 2012) alongside its Enacting Rules and Regulations.</p>
+                <label>
+                    <input type="radio" name="consents" value="yes" checked>
+                    I agree.
+                </label>
+            </div>          
+        </div>
+        <div class="inside-box2">
+            <div class="phrase">
+                <p>I want to receive e-mail updates regarding the promotions and events held by It's Caffeine New York.</p>
+                <label>
+                    <input type="radio" name="consent" value="agree"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="consent" value="disagree"> No
+                </label>
+            </div>
+        </div> 
+    </div>
+
+    <div class="box2">
+        <div class="inside-box">
+            <h4>Membership Benefits</h4>
+            <div class="phrase">
+             <p>1. <b>Exclusive Discounts:</b> Enjoy special discounts on all your favorite beverages and treats, available only to our valued members. Whether it's your morning espresso or an afternoon pick-me-up, save every time you visit. <br>
+                2. <b>Member-Only Events:</b> Be the first to know about and attend our exclusive events, such as coffee tastings, barista workshops, and live music nights. Connect with fellow coffee enthusiasts and immerse yourself in the vibrant coffee culture of New York City.<br>
+                3. <b>Birthday Treat:</b> Celebrate your special day with a complimentary drink of your choice. It's our way of saying thank you for being a part of the It's Caffeine family.<br>
+                4. <b>Early Access to New Products:</b> Get a sneak peek and early access to new menu items, seasonal specials, and limited-edition blends before they're available to the public.<br>
+                5. <b>Personalized Recommendations:</b> Let us cater to your unique tastes with personalized drink recommendations based on your preferences and past orders. Discover new favorites tailored just for you.<br>
+                6. <b>Free Wi-Fi:</b> Stay connected while you relax or work with complimentary high-speed Wi-Fi available exclusively to our members.<br>
+                7. <b>Priority Service:</b> Skip the line and enjoy priority service during busy hours. We value your time and want to ensure you get your caffeine fix without the wait.<br>
+                8. <b>Monthly Coffee Subscription Option:</b> Opt-in to our monthly coffee subscription service and have your favorite beans delivered straight to your door. Never run out of quality coffee again.<br>
+                9. <b>Charity Partnership:</b> Feel good about your membership knowing that a portion of your fees goes towards supporting local charities and initiatives in the New York community.<br>
+                10. <b>Referral Rewards:</b> Spread the love for It's Caffeine: New York and earn rewards for every friend you refer who becomes a member. The more, the merrier!<br></p>
+            </div>
+         </div>
+    </div>
+
+    <div class="box2">
+        <div class="inside-box">
+            <h4><strong>Personal Information</strong></h4>
+            <div class="phrase">
+                <form id="registration-form" action="#" method="post" enctype="multipart/form-data">
+                    <div class="name-container">
+                        <div class="name-field">
+                            <label for="last-name"><b>Last Name</b></label>
+                            <input type="text" id="last-name" name="last-name" required>
+                            <span id="last-name-error" class="error"></span>
+                        </div>
+                        <div class="name-field">
+                            <label for="first-name"><b>First Name</b></label>
+                            <input type="text" id="first-name" name="first-name" required><br><br>
+                        </div>
+                        <div class="name-field">
+                            <label for="middle-name"><b>Middle Name</b></label>
+                            <input type="text" id="middle-name" name="middle-name"><br><br>
+                        </div>
+                    </div>
+                    <div class="date-gen-container">
+                        <div class="date-field"> 
+                            <label for="dob"><b>Date of Birth</b></label>
+                            <input type="date" id="dob" name="dob" required> <br><br>
+                        </div>
+                        <div class="gender-field">
+                            <label><b>Gender</b></label>
+                            <label><input type="radio" id="male" name="gender" value="male"> Male</label>                       
+                            <label><input type="radio" id="female" name="gender" value="female"> Female</label>                      
+                            <label><input type="radio" id="other" name="gender" value="other"> Other</label><br>
+                        </div>
+                        
+                        <div class="email-field">
+                            <label for="email"><b>Email:</b></label>
+                            <input type="email" id="email" name="email" required> <br><br>
+                        </div>
+    
+                        <div class="civil-status-container">
+                            <label><b>Civil Status</b></label>
+                            <div class="civil-status">
+                                <label><input type="radio" id="status-single" name="civil-status" value="single" checked>Single</label>
+                                <label><input type="radio" id="status-married" name="civil-status" value="married">Married</label>
+                                <label><input type="radio" id="status-divorced" name="civil-status" value="divorced">Divorced</label>
+                                <label><input type="radio" id="status-widowed" name="civil-status" value="widowed">Widowed</label><br>
+                            </div>
+                        </div>                  
+                    </div>
+
+                    <div class="phone-number">
+                        <div class="phone-number-prefix">
+                            <label for="country"><b>Country Code</b></label>
+                            <select id="country">
+                                <option value="">Select Country Code</option>
+                                <option value="us">United States (+1)</option>
+                                <option value="uk">United Kingdom (+44)</option>
+                                <option value="fr">France (+33)</option>
+                                <option value="ph">Philippines (+63)</option>
+                                <option value="au">Australia (+61)</option>
+                                <option value="ca">Canada (+1)</option>
+                                <option value="de">Germany (+49)</option>
+                                <option value="it">Italy (+39)</option>
+                                <option value="jp">Japan (+81)</option>
+                                <option value="kr">South Korea (+82)</option>
+                                <option value="mx">Mexico (+52)</option>
+                                <option value="ru">Russia (+7)</option>
+                                <option value="br">Brazil (+55)</option>
+                                <option value="cn">China (+86)</option>
+                                <option value="es">Spain (+34)</option>
+                                <option value="in">India (+91)</option>
+                                <option value="id">Indonesia (+62)</option>
+                                <option value="sa">Saudi Arabia (+966)</option>
+                                <option value="za">South Africa (+27)</option>
+                                <option value="tr">Turkey (+90)</option>
+                                <option value="ar">Argentina (+54)</option>
+                                <option value="ch">Switzerland (+41)</option>
+                                <option value="co">Colombia (+57)</option>
+                                <option value="eg">Egypt (+20)</option>
+                                <option value="ae">United Arab Emirates (+971)</option>
+                                <option value="th">Thailand (+66)</option>
+                                <option value="vn">Vietnam (+84)</option>
+                                <option value="pl">Poland (+48)</option>
+                                <option value="nl">Netherlands (+31)</option>
+                                <option value="se">Sweden (+46)</option>
+                                <option value="be">Belgium (+32)</option>
+                                <option value="pt">Portugal (+351)</option>
+                                <option value="at">Austria (+43)</option>
+                                <option value="gr">Greece (+30)</option>
+                                <option value="fi">Finland (+358)</option>
+                                <option value="dk">Denmark (+45)</option>
+                                <option value="no">Norway (+47)</option>
+                                <option value="my">Malaysia (+60)</option>
+                                <option value="ng">Nigeria (+234)</option>
+                                <option value="pk">Pakistan (+92)</option>
+                                <option value="sg">Singapore (+65)</option>
+                                <option value="il">Israel (+972)</option>
+                                <option value="ie">Ireland (+353)</option>
+                                <option value="hu">Hungary (+36)</option>
+                                <option value="cz">Czech Republic (+420)</option>
+                                <option value="ro">Romania (+40)</option>
+                            </select>
+                        </div>
+                        <div class="phone-field">
+                            <label for="phone"><b>Phone Number:</b></label>
+                            <input type="tel" id="phone" name="phone" required> <br>
+                        </div>      
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="inside-box">
+            <h4><strong>Address Line</strong></h4>
+            <div class="phrase">
+                <form id="registration-form" action="#" method="post" enctype="multipart/form-data">
+                    <div class="address-line">
+                    <div class="address-first">
+                        <label for="address"><b>Address Line 1</b></label>
+                        <input type="text" id="address" name="address" required> <br>
+                    </div>
+                        <label for="address"><b>Address Line 2</b></label>
+                        <input type="text" id="second-address" name="second-address" required>
+                    </div>
+                    <br>
+                    <div class="address-dropdown">
+                        <div class="q_cont">
+                            <label for="region"><b>Region</b></label>
+                            <select id="region" name="region" onchange="updateProv();" required>
+                                <option value="" disabled selected>Select Region</option>
+                            </select>
+                        </div>
+                        
+                        <div class="q_cont">
+                            <label for="prov"><b>Province</b></label>
+                            <select id="prov" name="prov" onchange="updateCity();" required>
+                                <option value="" id="default" disabled selected>Select Province</option>
+                            </select>
+                        </div>
+                
+                        <div class="q_cont">
+                            <label for="city"><b>City</b></label>
+                            <select id="city" name="city" onchange="updateBrgy();" required>
+                                <option value="" id="default" disabled selected>Select City/Municipality</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="second-address">
+                        <div class="postal">
+                            <label for="brgy"><b>Baranggay</b></label>
+                            <select id="brgy" name="brgy" required>
+                                <option value="" id="default" disabled selected>Select Baranggay</option>
+                            </select>
+                        </div>
+                    
+                        <div class="postal">
+                            <label for="postal-code"><b>Postal Zip Code</b></label>
+                            <input type="text" id="postal-code" name="postal-code" required>
+                        </div>
+                    </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="inside-box">
+            <h4>Additional Information</h4>
+            <div class="phrase">
+                <div class="employment-status-container">
+                    <label><b>Employment Status</b></label>
+                    <div class="employment-status">
+                        <label>
+                            <input type="radio" id="status-employed" name="employment-status" value="employed" checked>
+                            Employed
+                        </label>
+                        <label>
+                            <input type="radio" id="status-unemployed" name="employment-status" value="unemployed">
+                            Unemployed
+                        </label>
+                        <label>
+                            <input type="radio" id="status-student" name="employment-status" value="student">
+                            Student
+                        </label>
+                        <label>
+                            <input type="radio" id="status-retired" name="employment-status" value="retired">
+                            Retired
+                        </label>
+                        <label>
+                            <input type="radio" id="status-other" name="employment-status" value="other">
+                            Other
+                        </label>                        
+                    </div>
+                </div>
+                <br>
+                <div class="disabilities">
+                    <label><b>Disabilities</b></label>
+                    <label>
+                        <input type="radio" id="disability-none" name="disability" value="none" checked>
+                        None
+                    </label>
+                    <label>
+                        <input type="radio" id="disability-physical" name="disability" value="physical">
+                        Physical
+                    </label>
+                    <label>
+                        <input type="radio" id="disability-visual" name="disability" value="visual">
+                        Visual
+                    </label>
+                    <label>
+                        <input type="radio" id="disability-hearing" name="disability" value="hearing">
+                        Hearing
+                    </label>
+                    <label>
+                        <input type="radio" id="disability-other" name="disability" value="other">
+                        Other
+                    </label><br>                   
+                </div>
+
+                <div class="cv-upload">
+                    <label for="cv"><b>Upload CV:</b></label>
+                    <div class="upload-box">
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" onchange="updateFileName()">
+                        <button type="button" onclick="document.getElementById('cv').click()">Choose File</button>
+                    </div>
+                    <span class="file-types">(Accepted formats: PDF, DOC, DOCX)</span>
+                    <div id="file-name-box"></div>
+                </div>                        
+                <br>
+                <label for="additional-notes"><b>Additional Notes</b></label>
+                <textarea id="additional-notes" name="additional-notes" class="custom-textarea"></textarea>
+                <br>
+                <div class="tandc">
+                    <div class="checkbox-container">
+                        <label>
+                            <input type="checkbox" id="agreeCheckbox">
+                            I have read and agree to the terms and conditions.
+                        </label>
+                        <label>
+                            <input type="checkbox" id="agreeCheckbox">
+                            All of my data are correct and true.
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+         </div>
+    </div>
+
+    <br>
+    <br>
+    
+    
+    
+</div>
+<script>
+    const reg_cont = document.getElementById("region");
+    const prov_cont = document.getElementById("prov");
+    const city_cont = document.getElementById("city");
+    const brgy_cont = document.getElementById("brgy");
+    const default_cont = document.querySelectorAll("#default");
+
+    var region_dict = {};
+    var prov_dict = {};
+    var city_dict = {};
+
+    async function appendRegion() {
+        const response = await fetch("./data/refregion.json");
+        region_data = await response.json();
+
+        region_data.RECORDS.forEach(function(record){
+            region_dict[record.regDesc] = record.regCode;
+            let reg_opt = document.createElement("option");
+            reg_opt.value = record.regDesc;
+            reg_opt.innerHTML = record.regDesc;
+            reg_cont.append(reg_opt);
+        });
+    }
+
+    appendRegion();
+
+    async function updateProv(){
+        prov_dict = {};
+
+        removeOptions(prov_cont);
+        removeOptions(city_cont);
+        removeOptions(brgy_cont);
+
+        default_cont.forEach((el) => resetDefault(el));
+
+        const response = await fetch("./data/refprovince.json");
+        prov_data = await response.json();
+
+        prov_data.RECORDS.forEach(function(record){
+            prov_dict[record.provDesc] = record.provCode;
+            let prov_opt = document.createElement("option");
+            if (record.regCode == region_dict[reg_cont.value]){
+                prov_opt.value = record.provDesc;
+                prov_opt.innerHTML = record.provDesc;
+                prov_cont.append(prov_opt);
+            }
+        });
+    }
+
+    async function updateCity(){
+        city_dict = {};
+
+        removeOptions(city_cont);
+        removeOptions(brgy_cont);
+
+        resetDefault(default_cont[1]);
+        resetDefault(default_cont[2]);
+
+        const response = await fetch("./data/refcitymun.json");
+        city_data = await response.json();
+
+        city_data.RECORDS.forEach(function(record){
+            city_dict[record.citymunDesc] = record.citymunCode;
+            let city_opt = document.createElement("option");
+            if (record.provCode == prov_dict[prov_cont.value]){
+                city_opt.value = record.citymunDesc;
+                city_opt.innerHTML = record.citymunDesc;
+                city_cont.append(city_opt);
+            }
+        });
+    }
+
+    async function updateBrgy(){
+        
+        removeOptions(brgy_cont);
+
+        resetDefault(default_cont[2]);
+
+        const response = await fetch("./data/refbrgy.json");
+        brgy_data = await response.json();
+
+        brgy_data.RECORDS.forEach(function(record){
+            let brgy_opt = document.createElement("option");
+            if (record.citymunCode == city_dict[city_cont.value]){
+                brgy_opt.value = record.brgyDesc;
+                brgy_opt.innerHTML = record.brgyDesc;
+                brgy_cont.append(brgy_opt);
+            }
+        });
+    }
+
+    function removeOptions(cont){
+        while(cont.lastChild.id !== "default") {
+            cont.removeChild(cont.lastChild);
+        }
+    }
+
+    function resetDefault(opt){
+        opt.disabled = false;
+        opt.selected = true;
+        opt.disabled = true;
+    }
+
+    function updateFileName() {
+    var input = document.getElementById('cv');
+    var fileName = input.files[0].name;
+    var fileNameBox = document.getElementById('file-name-box');
+    fileNameBox.innerHTML = '<div class="file-name-box">' + fileName + '</div>';
+}
+
+
+document.getElementById("btn").addEventListener("submit", function(event) {
+        // Prevent default form submission behavior
+        event.preventDefault();
+
+        // Display pop-up message
+        var confirmation = confirm(console.log("You have registered to the Seventeen system! Would you like to go back?"));
+        
+        // If user confirms, go back
+        if (confirmation) {
+            window.history.back();
+        }
+    });
+    
+</script>
+</body>
+</html>
